@@ -18,14 +18,14 @@ Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 - ⌨️ 100% written in TypeScript
 - 🎁 ...much more
 
-## Run the CLI
-Run the `shadcn-ui` init command to setup your project:
+## Shadcn-ui
+
+Run the `shadcn-ui` init command to setup your project and add components:
+
 ```
 npx shadcn-ui@latest init
 ```
 
-## Adding shadcn components 
-Add different components to the project:
 ```
 npx shadcn-ui@latest add button
 npx shadcn-ui@latest add sheet
@@ -33,14 +33,17 @@ npx shadcn-ui@latest add separator
 ```
 
 ## Lucide React
+
 Implementation of the lucide icon library for react applications
+
 ```
-npm install lucide-react
+npm i lucide-react
 ```
 
-##
-Configure components.json
+## Configure components.json
+
 You will be asked a few questions to configure `components.json`:
+
 ```
 Would you like to use TypeScript (recommended)? no / yes
 Which style would you like to use? › Default
@@ -51,6 +54,35 @@ Where is your tailwind.config.js located? › tailwind.config.js
 Configure the import alias for components: › @/components
 Configure the import alias for utils: › @/lib/utils
 Are you using React Server Components? › no / yes
+```
+
+## Dependencies
+
+Installation is done by the following commands:
+
+```
+npm i express
+npm i -D @types/express
+```
+
+```
+npm i dotenv
+```
+
+```
+npm i payload
+```
+
+```
+npm i cross-env
+```
+
+```
+npm i @payloadcms/richtext-slate @payloadcms/bundler-webpack @payloadcms/db-mongodb
+```
+
+```
+npm i -D nodemon
 ```
 
 ## Getting Started
@@ -69,13 +101,6 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-
 ## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
