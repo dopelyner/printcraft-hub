@@ -29,6 +29,7 @@ Add different components to the project:
 ```
 npx shadcn-ui@latest add button
 npx shadcn-ui@latest add sheet
+npx shadcn-ui@latest add separator
 ```
 
 ## Lucide React
