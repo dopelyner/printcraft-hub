@@ -1,7 +1,13 @@
 'use client'
 
-import { Sheet, ShoppingCart } from 'lucide-react'
-import { SheetContent, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet'
+import { ShoppingCart } from 'lucide-react'
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger
+} from './ui/sheet'
 
 const Cart = () => {
   return (
