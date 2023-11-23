@@ -24,11 +24,13 @@ Run the `shadcn-ui` init command to setup your project:
 npx shadcn-ui@latest init
 ```
 
-## Adding components 
-Add Button component to the project:
+## Adding shadcn components 
+Add different components to the project:
 ```
 npx shadcn-ui@latest add button
+npx shadcn-ui@latest add sheet
 ```
+
 ## Lucide React
 Implementation of the lucide icon library for react applications
 ```
