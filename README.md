@@ -30,6 +30,8 @@ npx shadcn-ui@latest init
 npx shadcn-ui@latest add button
 npx shadcn-ui@latest add sheet
 npx shadcn-ui@latest add separator
+npx shadcn-ui@latest add input
+npx shadcn-ui@latest add label
 ```
 
 ## Lucide React
@@ -84,6 +86,18 @@ npm i @payloadcms/richtext-slate @payloadcms/bundler-webpack @payloadcms/db-mong
 ```
 npm i -D nodemon
 ```
+
+```
+npm i react-hook-form @hookform/resolvers zod sonner
+```
+
+## tRPC
+RPC is short for "Remote Procedure Call". It is a way of calling functions on one computer (the server) from another computer (the client). With traditional HTTP/REST APIs, you call a URL and get a response. With RPC, you call a function and get a response.
+```
+npm i @trpc/server @trpc/client @trpc/next @trpc/react-query @tanstack/react-query
+npm i @tanstack/react-query@4.36.1
+```
+
 
 ## Getting Started
 
