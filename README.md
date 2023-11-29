@@ -98,6 +98,27 @@ npm i @trpc/server @trpc/client @trpc/next @trpc/react-query @tanstack/react-que
 npm i @tanstack/react-query@4.36.1
 ```
 
+## Configure `package.json`
+```
+  "scripts": {
+    "dev": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
+    "generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:types",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  ```
+
+## Generate payload types
+```
+npm run generate:types
+```
+
+## E-mail verification
+```
+npm i nodemailer
+npm i --save-dev @types/nodemailer
+```
 
 ## Getting Started
 

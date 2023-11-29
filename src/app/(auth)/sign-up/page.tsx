@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
 import {
-  AuthCredentialsValidor,
+  AuthCredentialsValidator,
   TAuthCredentialsValidator
 } from '@/lib/validators/account-credentials-validator'
 import { trpc } from '@/trpc/client'
@@ -21,15 +21,14 @@ const Page = () => {
     handleSubmit,
     formState: { errors }
   } = useForm<TAuthCredentialsValidator>({
-    resolver: zodResolver(AuthCredentialsValidor)
+    resolver: zodResolver(AuthCredentialsValidator)
   })
 
-  // const { data } = trpc.anyApiRoute.useQuery()
-
-  // console.log(data)
+  const { mutate, isLoading } = trpc.auth.createPayloadUser.useMutation({})
 
   const onSubmit = ({ email, password }: TAuthCredentialsValidator) => {
     //send data to the server
+    mutate({ email, password })
   }
 
   return (
@@ -69,6 +68,7 @@ const Page = () => {
                   <Label htmlFor='password'>Password</Label>
                   <Input
                     {...register('password')}
+                    type='password'
                     className={cn({
                       'focus-visible:ring-red-500': errors.password
                     })}
