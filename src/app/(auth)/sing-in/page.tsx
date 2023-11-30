@@ -9,16 +9,20 @@ import {
   AuthCredentialsValidator,
   TAuthCredentialsValidator
 } from '@/lib/validators/account-credentials-validator'
+import Link from 'next/link'
 import { trpc } from '@/trpc/client'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { ZodError } from 'zod'
 
 const Page = () => {
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const isSeller = searchParams.get('as') === 'seller' // sing-in?as=seller
+
   const {
     register,
     handleSubmit,
@@ -26,8 +30,6 @@ const Page = () => {
   } = useForm<TAuthCredentialsValidator>({
     resolver: zodResolver(AuthCredentialsValidator)
   })
-
-  const router = useRouter()
 
   const { mutate, isLoading } = trpc.auth.createPayloadUser.useMutation({
     onError: err => {
@@ -61,16 +63,16 @@ const Page = () => {
         <div className='mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]'>
           <div className='flex flex-col items-center space-y-2 text-center'>
             <Icons.logo className='h-20 w-20' />
-            <h1 className='text-2xl font-bold'>Create an account</h1>
+            <h1 className='text-2xl font-bold'>Sign in to your account</h1>
 
             <Link
               className={buttonVariants({
                 variant: 'link',
                 className: 'gap-1.5'
               })}
-              href='/sign-in'
+              href='/sign-up'
             >
-              Already have an account ? Sign-in
+              Don&apo;t have an account ?
               <ArrowRight className='h-4 w-4' />
             </Link>
           </div>
@@ -109,9 +111,20 @@ const Page = () => {
                     </p>
                   )}
                 </div>
-                <Button>Sign up</Button>
+                <Button>Sign In</Button>
               </div>
             </form>
+
+            <div className='relative'>
+              <div className='absolute inset-0 flex items-center'>
+                <span className='w-full border-t' />
+              </div>
+              <div className='relative flex justify-center text-xs uppercase'>
+                <span className='bg-background px-2 text-muted-foreground'>
+                  or
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
