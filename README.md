@@ -32,6 +32,7 @@ npx shadcn-ui@latest add sheet
 npx shadcn-ui@latest add separator
 npx shadcn-ui@latest add input
 npx shadcn-ui@latest add label
+npx shadcn-ui@latest add dropdown-menu
 ```
 
 ## Lucide React
