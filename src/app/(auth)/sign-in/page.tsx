@@ -11,7 +11,7 @@ import {
 } from '@/lib/validators/account-credentials-validator'
 import { trpc } from '@/trpc/client'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Loader2 } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useForm } from 'react-hook-form'
@@ -123,7 +123,12 @@ const Page = () => {
                     </p>
                   )}
                 </div>
-                <Button>Sign In</Button>
+                <Button disabled={isLoading}>
+                  {isLoading && (
+                    <Loader2 className='mr-2 h-4 w-4 animate-spin' />
+                  )}
+                  Sign in
+                </Button>
               </div>
             </form>
 
