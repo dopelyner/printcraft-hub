@@ -4,19 +4,14 @@ Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
 ## Features
 
-- 🛠️ Complete marketplace built from scratch in Next.js 14
-- 💻 Beautiful landing page & product pages included
-- 🎨 Custom artwork included
+- 💻 Landing page & product pages included
 - 💳 Full admin dashboard
 - 🛍️ Users can purchase and sell their own products
 - 🛒 Locally persisted shopping cart
 - 🔑 Authentication using Payload
-- 🖥️ Learn how to self-host Next.js
 - 🌟 Clean, modern UI using shadcn-ui
-- ✉️ Beautiful emails for signing up and after purchase
+- ✉️ Emails for signing up and after purchase
 - ✅ Admins can verify products to ensure high quality
-- ⌨️ 100% written in TypeScript
-- 🎁 ...much more
 
 ## Shadcn-ui
 
@@ -96,6 +91,9 @@ npm i react-hook-form @hookform/resolvers zod sonner
 
 ```
 npm i swiper
+```
+```
+npm i stripe
 ```
 
 ## tRPC
