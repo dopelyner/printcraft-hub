@@ -34,6 +34,7 @@ npx shadcn-ui@latest add input
 npx shadcn-ui@latest add label
 npx shadcn-ui@latest add dropdown-menu
 npx shadcn-ui@latest add skeleton
+npx shadcn-ui@latest add scrollarea
 ```
 
 ## Lucide React
@@ -124,6 +125,11 @@ npm run generate:types
 ```
 npm i nodemailer
 npm i --save-dev @types/nodemailer
+```
+
+## State management
+```
+npm i zustand
 ```
 
 ## Getting Started
