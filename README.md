@@ -93,6 +93,10 @@ npm i -D nodemon
 npm i react-hook-form @hookform/resolvers zod sonner
 ```
 
+```
+npm i swiper
+```
+
 ## tRPC
 RPC is short for "Remote Procedure Call". It is a way of calling functions on one computer (the server) from another computer (the client). With traditional HTTP/REST APIs, you call a URL and get a response. With RPC, you call a function and get a response.
 ```
@@ -128,16 +132,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Deploy on Vercel
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
