@@ -66,19 +66,7 @@ npm i -D @types/express
 ```
 
 ```
-npm i dotenv
-```
-
-```
-npm i payload
-```
-
-```
-npm i cross-env
-```
-
-```
-npm i @payloadcms/richtext-slate @payloadcms/bundler-webpack @payloadcms/db-mongodb
+npm i dotenv payload cross-env @payloadcms/richtext-slate @payloadcms/bundler-webpack @payloadcms/db-mongodb react-hook-form @hookform/resolvers zod sonner
 ```
 
 ```
@@ -86,31 +74,7 @@ npm i -D nodemon
 ```
 
 ```
-npm i react-hook-form @hookform/resolvers zod sonner
-```
-
-```
-npm i swiper
-```
-
-```
-npm i stripe
-```
-
-```
-npm i body-parser
-```
-
-```
-npm i resend
-```
-
-```
-npm i @react-email/components
-```
-
-```
-npm i date-fns
+npm i swiper stripe body-parser resend  @react-email/components date-fns
 ```
 
 ```
