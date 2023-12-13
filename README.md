@@ -1,4 +1,4 @@
-# Hippo Marketplace - Fullstack E-Commerce Marketplace
+# Hippo Marketplace
 
 Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
@@ -92,9 +92,31 @@ npm i react-hook-form @hookform/resolvers zod sonner
 ```
 npm i swiper
 ```
+
 ```
 npm i stripe
 ```
+
+```
+npm i body-parser
+```
+
+```
+npm i resend
+```
+
+```
+npm i @react-email/components
+```
+
+```
+npm i date-fns
+```
+
+```
+npm i -D copyfiles
+```
+
 
 ## tRPC
 RPC is short for "Remote Procedure Call". It is a way of calling functions on one computer (the server) from another computer (the client). With traditional HTTP/REST APIs, you call a URL and get a response. With RPC, you call a function and get a response.
@@ -106,10 +128,14 @@ npm i @tanstack/react-query@4.36.1
 ## Configure `package.json`
 ```
   "scripts": {
-    "dev": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
+"dev": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
     "generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:types",
-    "build": "next build",
-    "start": "next start",
+    "build:payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload build",
+    "build:server": "tsc --project tsconfig.server.json",
+    "build:next": "cross-env PAYLOAD_CONFIG_PATH=dist/payload.config.js NEXT_BUILD=true node dist/server.js",
+    "build": "cross-env NODE_ENV=production yarn build:payload && yarn build:server && yarn copyfiles && yarn build:next",
+    "start": "cross-env PAYLOAD_CONFIG_PATH=dist/payload.config.js NODE_ENV=production node dist/server.js",
+    "copyfiles": "copyfiles -u 1 \"src/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png}\" dist/",
     "lint": "next lint"
   },
   ```
