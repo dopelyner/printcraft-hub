@@ -66,7 +66,7 @@ npm i -D @types/express
 ```
 
 ```
-npm i dotenv payload cross-env @payloadcms/richtext-slate @payloadcms/bundler-webpack @payloadcms/db-mongodb react-hook-form @hookform/resolvers zod sonner
+npm i dotenv payload cross-env @payloadcms/richtext-slate @payloadcms/bundler-webpack @payloadcms/db-mongodb react-hook-form @hookform/resolvers zod sonner zustand
 ```
 
 ```
@@ -115,9 +115,17 @@ npm i nodemailer
 npm i --save-dev @types/nodemailer
 ```
 
-## State management
+## Enviromnent variables
+
+Configure `.env` file:
+
 ```
-npm i zustand
+NEXT_PUBLIC_SERVER_URL=
+PAYLOAD_SECRET=
+MONGODB_URL=
+RESEND_API_KEY=
+STRIPE_SECRECT_KEY=
+STRIPE_WEBHOOK_SECRECT_KEY=
 ```
 
 ## Getting Started
@@ -126,6 +134,11 @@ First, run the development server:
 
 ```bash
 npm run dev
+```
+
+Create an optimized production build:
+```bash
+npm run build
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
