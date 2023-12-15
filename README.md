@@ -33,20 +33,20 @@ Implementation of the lucide icon library for react applications
 npm i lucide-react
 ```
 
-## Configure components.json
+## Configure `components.json`
 
 You will be asked a few questions to configure `components.json`:
 
 ```
-Would you like to use TypeScript (recommended)? no / yes
+Would you like to use TypeScript (recommended)? yes
 Which style would you like to use? › Default
 Which color would you like to use as base color? › Slate
 Where is your global CSS file? › › app/globals.css
-Do you want to use CSS variables for colors? › no / yes
+Do you want to use CSS variables for colors? › yes
 Where is your tailwind.config.js located? › tailwind.config.js
 Configure the import alias for components: › @/components
 Configure the import alias for utils: › @/lib/utils
-Are you using React Server Components? › no / yes
+Are you using React Server Components? › yes
 ```
 
 ## Dependencies
@@ -117,7 +117,7 @@ PAYLOAD_SECRET=
 MONGODB_URL=
 RESEND_API_KEY=
 STRIPE_SECRECT_KEY=
-STRIPE_WEBHOOK_SECRECT_KEY=
+STRIPE_WEBHOOK_SECRECT=
 ```
 
 ## Getting Started
