@@ -50,7 +50,7 @@ const MobileNav = () => {
 
       <div className='fixed overflow-y-scroll overscroll-y-none inset-0 z-40 flex'>
         <div className='w-4/5'>
-          <div className='relative flex w-full max-w-sm flex-col overflow-y-auto bg-white pb-12 shadow-xl'>
+          <div className='relative flex w-full max-w-sm flex-col overflow-y-auto bg-dirtyWhite pb-12 shadow-xl'>
             <div className='flex px-4 pb-2 pt-5'>
               <button
                 type='button'
@@ -68,7 +68,7 @@ const MobileNav = () => {
                     key={category.label}
                     className='space-y-10 px-4 pb-8 pt-10'
                   >
-                    <div className='border-b border-gray-200'>
+                    <div className='border-b border-dirtyWhite'>
                       <div className='-mb-px flex'>
                         <p className='border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 py-4 text-base font-medium'>
                           {category.label}
@@ -79,7 +79,7 @@ const MobileNav = () => {
                     <div className='grid grid-cols-2 gap-y-10 gap-x-4'>
                       {category.featured.map(item => (
                         <div key={item.name} className='group relative text-sm'>
-                          <div className='relative aspect-square overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
+                          <div className='relative aspect-square overflow-hidden rounded-lg bg-dirtyWhite group-hover:opacity-75'>
                             <Image
                               fill
                               src={item.imageSrc}
@@ -101,7 +101,7 @@ const MobileNav = () => {
               </ul>
             </div>
 
-            <div className='space-y-6 border-t border-gray-200 px-4 py-6'>
+            <div className='space-y-6 border-t border-dirtyWhite px-4 py-6'>
               <div className='flow-root'>
                 <Link
                   onClick={() => closeOnCurrent('/sign-in')}

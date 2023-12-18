@@ -14,10 +14,10 @@ const Navbar = async () => {
   const { user } = await getServerSideUser(nextCookies)
 
   return (
-    <div className='bg-white sticky z-50 top-0 inset-x-0 h-16'>
-      <header className='relative bg-white'>
+    <div className='bg-dirtyWhite sticky z-50 top-0 inset-x-0 h-16'>
+      <header className='relative bg-dirtyWhite'>
         <MaxWidthWrapper>
-          <div className='border-b border-gray-200'>
+          <div className='border-b border-dirtyWhite'>
             <div className='flex h-16 items-center'>
               <MobileNav />
 
@@ -45,7 +45,7 @@ const Navbar = async () => {
                   )}
 
                   {user ? null : (
-                    <span className='h-6 w-px bg-gray-200' aria-hidden='true' />
+                    <span className='h-6 w-px bg-dirtyWhite' aria-hidden='true' />
                   )}
 
                   {user ? (
@@ -62,13 +62,13 @@ const Navbar = async () => {
                   )}
 
                   {user ? (
-                    <span className='h-6 w-px bg-gray-200' aria-hidden='true' />
+                    <span className='h-6 w-px bg-dirtyWhite' aria-hidden='true' />
                   ) : null}
 
                   {user ? null : (
                     <div className='flex lg:ml-6'>
                       <span
-                        className='h-6 w-px bg-gray-200'
+                        className='h-6 w-px bg-dirtyWhite'
                         aria-hidden='true'
                       />
                     </div>
