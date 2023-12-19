@@ -56,7 +56,7 @@ const ProductReel = (props: ProductReelProps) => {
         {href ? (
           <Link
             href={href}
-            className='hidden text-sm font-medium text-orange-600 hover:text-orange-500 md:block'
+            className='hidden text-sm font-medium text-primary hover:text-orange-500 md:block'
           >
             Shop the collection <span aria-hidden='true'>&rarr;</span>
           </Link>

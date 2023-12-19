@@ -37,7 +37,7 @@ export default function Home () {
       <MaxWidthWrapper>
         <div className='py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
           <h1 className='text-5xl font-bold tracking-tight text-dirtyWhite sm:text-6xl'>
-            <span className='text-orange-600'>PrintCraft Hub</span>.<br />
+            <span className='text-orange-400'>PrintCraft Hub</span>.<br />
             Crafting Possibilities, One Layer at a Time
           </h1>
           <p className='mt-6 text-lg max-w-prose text-dirtyWhite opacity-80'>

@@ -26,8 +26,8 @@ export function formatPrice(
 }
 
 export function constructMetadata({
-  title = 'Hippo Marketplace - the marketplace for digital assets',
-  description = 'Hippo Marketplace is an open-source marketplace for high-quality digital goods.',
+  title = 'PrintCraft Hub - Crafting Possibilities, One Layer at a Time',
+  description = 'PrintCraft Hub is an open-source marketplace for high-quality digital goods.',
   image = '/thumbnail.jpg',
   icons = '/favicon.ico',
   noIndex = false,
