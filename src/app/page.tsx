@@ -75,13 +75,13 @@ export default function Home () {
                 className='text-center md:flex md:items-center md:text-left lg:block lg:text-center'
               >
                 <div className='md:flex-shrink-0 flex justify-center'>
-                  <div className='h-16 w-16 flex items-center justify-center rounded-full bg-background text-dirtyWhite'>
+                  <div className='h-16 w-16 flex items-center justify-center rounded-full bg-slate-800 text-dirtyWhite'>
                     {<perk.Icon className='w-1/3 h-1/3' />}
                   </div>
                 </div>
 
                 <div className='mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6'>
-                  <h3 className='text-base font-medium text-orange-600'>
+                  <h3 className='text-base font-medium text-primary'>
                     {perk.name}
                   </h3>
                   <p className='mt-3 text-sm text-muted-foreground'>
