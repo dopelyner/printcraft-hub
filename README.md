@@ -1,4 +1,4 @@
-# Hippo Marketplace
+# PrintCraft Hub Marketplace
 
 Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
