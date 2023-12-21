@@ -49,7 +49,7 @@ export default function Home () {
             <span className='text-orange-400'>PrintCraft Hub</span>.<br />
             Crafting Possibilities, One Layer at a Time
           </h1>
-          <p className='mt-10 text-lg max-w-prose text-dirtyWhite opacity-80'>
+          <p className='mt-20 text-lg max-w-prose text-dirtyWhite opacity-80'>
             PrintCraft Hub is more than just a marketplace for 3D printer
             models; it&apos;s a vibrant community and a creative hub for makers
             and enthusiasts. We believe in the power of crafting possibilities,

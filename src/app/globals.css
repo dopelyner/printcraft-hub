@@ -73,3 +73,13 @@
   background: white !important;
   scale: 1 !important;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
