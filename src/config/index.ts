@@ -1,44 +1,54 @@
 export const PRODUCT_CATEGORIES = [
     {
-        label: "UI Kits",
-        value: "ui_kits" as const,
+        label: "Gadgets",
+        value: "gadgets" as const,
         featured: [
             {
-                name: "Editor picks",
-                href: "#",
-                imageSrc: "/nav/ui-kits/mixed.jpg"
+                name: "Gadgets",
+                href: "/products",
+                imageSrc: "/nav/gadgets/cable-holder.png"
             },
             {
-                name: "New Arrivals",
-                href: "#",
-                imageSrc: "/nav/ui-kits/blue.jpg"
+                name: "Gadgets",
+                href: "/products",
+                imageSrc: "/nav/gadgets/cable-holder.png"
             },
-            {
-                name: "Bestsellers",
-                href: "#",
-                imageSrc: "/nav/ui-kits/purple.jpg"
-            },
+            // {
+            //     name: "New Arrivals",
+            //     href: "#",
+            //     imageSrc: "/nav/ui-kits/blue.jpg"
+            // },
+            // {
+            //     name: "Bestsellers",
+            //     href: "#",
+            //     imageSrc: "/nav/ui-kits/purple.jpg"
+            // },
         ],
     },
     {
-        label: "Icons",
-        value: "icons" as const,
+        label: "Household",
+        value: "household" as const,
         featured: [
             {
-                name: "Favorite Icons Picks",
+                name: "Home Decor",
                 href: "#",
-                imageSrc: "/nav/icons/picks.jpg"
+                imageSrc: "/nav/household/foldable-stackable-crate.png"
             },
             {
-                name: "New Arrivals",
+                name: "Home Decor",
                 href: "#",
-                imageSrc: "/nav/icons/new.jpg"
+                imageSrc: "/nav/household/foldable-stackable-crate.png"
             },
-            {
-                name: "Bestselling Icons",
-                href: "#",
-                imageSrc: "/nav/icons/bestsellers.jpg"
-            },
+            // {
+            //     name: "New Arrivals",
+            //     href: "#",
+            //     imageSrc: "/nav/icons/new.jpg"
+            // },
+            // {
+            //     name: "Bestselling Icons",
+            //     href: "#",
+            //     imageSrc: "/nav/icons/bestsellers.jpg"
+            // },
         ],
     },
 ]

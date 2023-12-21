@@ -1,8 +1,12 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import ProductReel from '@/components/ProductReel'
 import { Button, buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 import { Leaf, Lightbulb, ShieldCheck, Users } from 'lucide-react'
+import { Nunito, Oswald, Roboto_Slab } from 'next/font/google'
 import Link from 'next/link'
+
+const titleFont = Oswald({ weight: '400', subsets: ['latin'] })
 
 const perks = [
   {
@@ -35,12 +39,17 @@ export default function Home () {
   return (
     <>
       <MaxWidthWrapper>
-        <div className='py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
-          <h1 className='text-5xl font-bold tracking-tight text-dirtyWhite sm:text-6xl'>
+        <div className='py-20 mx-auto text-center flex flex-col items-center max-w-5xl'>
+          <h1
+            className={cn(
+              'text-7xl font-bold tracking-tight text-dirtyWhite',
+              titleFont.className
+            )}
+          >
             <span className='text-orange-400'>PrintCraft Hub</span>.<br />
             Crafting Possibilities, One Layer at a Time
           </h1>
-          <p className='mt-6 text-lg max-w-prose text-dirtyWhite opacity-80'>
+          <p className='mt-10 text-lg max-w-prose text-dirtyWhite opacity-80'>
             PrintCraft Hub is more than just a marketplace for 3D printer
             models; it&apos;s a vibrant community and a creative hub for makers
             and enthusiasts. We believe in the power of crafting possibilities,
@@ -75,7 +84,7 @@ export default function Home () {
                 className='text-center md:flex md:items-center md:text-left lg:block lg:text-center'
               >
                 <div className='md:flex-shrink-0 flex justify-center'>
-                  <div className='h-16 w-16 flex items-center justify-center rounded-full bg-slate-800 text-dirtyWhite'>
+                  <div className='h-16 w-16 flex items-center justify-center rounded-full bg-background text-dirtyWhite'>
                     {<perk.Icon className='w-1/3 h-1/3' />}
                   </div>
                 </div>
