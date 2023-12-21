@@ -3,7 +3,7 @@ import ProductReel from '@/components/ProductReel'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Leaf, Lightbulb, ShieldCheck, Users } from 'lucide-react'
-import { Nunito, Oswald, Roboto_Slab } from 'next/font/google'
+import { Oswald } from 'next/font/google'
 import Link from 'next/link'
 
 const titleFont = Oswald({ weight: '400', subsets: ['latin'] })
@@ -75,7 +75,7 @@ export default function Home () {
         />
       </MaxWidthWrapper>
 
-      <section className='bg-dirtyWhite'>
+      <section className='bg-foreground m-20 rounded-xl'>
         <MaxWidthWrapper className='py-20'>
           <div className='grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-0'>
             {perks.map(perk => (
@@ -93,7 +93,7 @@ export default function Home () {
                   <h3 className='text-base font-medium text-primary'>
                     {perk.name}
                   </h3>
-                  <p className='mt-3 text-sm text-muted-foreground'>
+                  <p className='mt-3 text-sm text-dirtyWhite'>
                     {perk.decription}
                   </p>
                 </div>

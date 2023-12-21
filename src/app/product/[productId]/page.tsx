@@ -50,8 +50,8 @@ const Page = async ({ params }: PageProps) => {
     .filter(Boolean) as string[]
 
   return (
-    <MaxWidthWrapper className='bg-white'>
-      <div className='bg-white'>
+    <MaxWidthWrapper className='bg-[#545454] rounded-xl'>
+      <div className='bg-[#545454] mt-10'>
         <div className='mx-auto max-w-2xl px-4 py-16 sm:px6 lg:grid lg:max-w-7xl lg grid-cols-2 lg:gap-x-8 lg:px-8'>
           {/* product details */}
           <div className='lg:max-w-lg lg:self-end'>

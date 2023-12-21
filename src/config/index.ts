@@ -8,11 +8,6 @@ export const PRODUCT_CATEGORIES = [
                 href: "/products",
                 imageSrc: "/nav/gadgets/cable-holder.png"
             },
-            {
-                name: "Gadgets",
-                href: "/products",
-                imageSrc: "/nav/gadgets/cable-holder.png"
-            },
             // {
             //     name: "New Arrivals",
             //     href: "#",
@@ -29,11 +24,6 @@ export const PRODUCT_CATEGORIES = [
         label: "Household",
         value: "household" as const,
         featured: [
-            {
-                name: "Home Decor",
-                href: "#",
-                imageSrc: "/nav/household/foldable-stackable-crate.png"
-            },
             {
                 name: "Home Decor",
                 href: "#",

@@ -17,7 +17,7 @@ const Navbar = async () => {
     <div className='bg-background sticky z-50 top-0 inset-x-0 h-16 text-dirtyWhite'>
       <header className='relative bg-background'>
         <MaxWidthWrapper>
-          <div className='border-b border-dirtyWhite'>
+          <div className='border-b border-primary'>
             <div className='flex h-16 items-center'>
               <MobileNav />
 

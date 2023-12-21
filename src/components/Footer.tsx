@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className='bg-background flex-grow-0'>
       <MaxWidthWrapper>
-        <div className='border-t border-gray-200'>
+        <div className='border-t border-primary'>
           {pathsToMinimize.includes(pathname) ? null : (
             <div className='spb-8 pt-16'>
               <div className='flex justify-center'>
@@ -24,23 +24,16 @@ const Footer = () => {
           {pathsToMinimize.includes(pathname) ? null : (
             <div>
               <div className='relative flex items-center px-6 py-6 sm:py-8 lg:mt-0'>
-                {/* <div className='absolute inset-0 overflow-hidden rounded-lg'>
-                  <div
-                    aria-hidden='true'
-                    className='absolute bg-zinc-50 inset-0 bg-gradient-to-br bg-opacity-90'
-                  />
-                </div> */}
-
                 <div className='text-center relative mx-auto max-w-sm'>
-                  <h3 className='font-semibold text-dirtyWhite'>
+                  <h3 className='font-semibold text-primary'>
                     Become a seller
                   </h3>
-                  <p className='mt-2 text-sm text-muted-foreground'>
+                  <p className='mt-2 text-sm text-foreground font-medium'>
                     If you&apos;d like to sell high-quality digital products,
                     you can do so in minutes.{' '}
                     <Link
                       href='/sign-in?as=seller'
-                      className='whitespace-nowrap font-medium text-dirtyWhite hover:text-zinc-300'
+                      className='whitespace-nowrap font-medium text-gray-300   hover:text-zinc-400'
                     >
                       Get started &rarr;
                     </Link>
