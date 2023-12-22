@@ -41,9 +41,9 @@ const Cart = () => {
       <SheetTrigger className='group -m-2 flex items-center p-2'>
         <ShoppingCart
           aria-hidden='true'
-          className='h-6 w-6 flex-shrink-0 text-dirtyWhite group-hover:text-gray-300'
+          className='h-6 w-6 flex-shrink-0 text-dirtyWhite group-hover:text-primary'
         />
-        <span className='ml-2 text-sm font-medium text-dirtyWhite group-hover:text-gray-300'>
+        <span className='ml-2 text-sm font-medium text-dirtyWhite group-hover:text-primary'>
           {isMounted ? itemCount : 0}
         </span>
       </SheetTrigger>
@@ -96,9 +96,9 @@ const Cart = () => {
           </>
         ) : (
           <div className='flex h-full flex-col items-center justify-center space-y-1'>
-            <ShoppingCart className='relative mb-4 h-60 w-60 text-muted-foreground' />
+            <ShoppingCart className='relative mb-4 h-60 w-60 text-foreground' />
 
-            <div className='text-xl font-semibold text-dirtyWhite'>
+            <div className='text-xl font-semibold text-accent'>
               {' '}
               Your cart is empty
             </div>

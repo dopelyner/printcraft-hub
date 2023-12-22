@@ -8,16 +8,6 @@ export const PRODUCT_CATEGORIES = [
                 href: "/products",
                 imageSrc: "/nav/gadgets/cable-holder.png"
             },
-            // {
-            //     name: "New Arrivals",
-            //     href: "#",
-            //     imageSrc: "/nav/ui-kits/blue.jpg"
-            // },
-            // {
-            //     name: "Bestsellers",
-            //     href: "#",
-            //     imageSrc: "/nav/ui-kits/purple.jpg"
-            // },
         ],
     },
     {
@@ -29,16 +19,6 @@ export const PRODUCT_CATEGORIES = [
                 href: "#",
                 imageSrc: "/nav/household/foldable-stackable-crate.png"
             },
-            // {
-            //     name: "New Arrivals",
-            //     href: "#",
-            //     imageSrc: "/nav/icons/new.jpg"
-            // },
-            // {
-            //     name: "Bestselling Icons",
-            //     href: "#",
-            //     imageSrc: "/nav/icons/bestsellers.jpg"
-            // },
         ],
     },
 ]
