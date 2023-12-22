@@ -58,7 +58,7 @@ export function constructMetadata({
       creator: '@dopelyner',
     },
     icons,
-    metadataBase: new URL('https://hippo-marketplace-production.up.railway.app/'),
+    metadataBase: new URL('https://printcraft-hub-production.up.railway.app/'),
     ...(noIndex && {
       robots: {
         index: false,
