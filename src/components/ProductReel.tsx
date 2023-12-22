@@ -49,7 +49,7 @@ const ProductReel = (props: ProductReelProps) => {
             </h1>
           ) : null}
           {subtitle ? (
-            <p className='mt-2 text-sm text-muted-foreground'>{subtitle}</p>
+            <p className='mt-2 text-sm text-dirtyWhite'>{subtitle}</p>
           ) : null}
         </div>
 

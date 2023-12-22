@@ -14,7 +14,7 @@ export const Orders: CollectionConfig = {
     slug: "orders",
     admin: {
         useAsTitle: "Your Orders",
-        description: "A summary of all your orders on Hippo Marketplace"
+        description: "A summary of all your orders on PrintCraft Hub Marketplace"
     },
     access: {
         read: yourOwn,

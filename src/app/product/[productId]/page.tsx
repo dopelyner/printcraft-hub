@@ -50,8 +50,8 @@ const Page = async ({ params }: PageProps) => {
     .filter(Boolean) as string[]
 
   return (
-    <MaxWidthWrapper className='bg-[#545454] rounded-xl'>
-      <div className='bg-[#545454] mt-10'>
+    <MaxWidthWrapper className='bg-foreground rounded-xl'>
+      <div className='bg-foreground mt-10'>
         <div className='mx-auto max-w-2xl px-4 py-16 sm:px6 lg:grid lg:max-w-7xl lg grid-cols-2 lg:gap-x-8 lg:px-8'>
           {/* product details */}
           <div className='lg:max-w-lg lg:self-end'>
@@ -61,7 +61,7 @@ const Page = async ({ params }: PageProps) => {
                   <div className='flex items-center text-sm'>
                     <Link
                       href={breadcrum.href}
-                      className='font-medium text-sm text-muted-foreground hover:text-gray'
+                      className='font-medium text-sm text-accent hover:text-gray'
                     >
                       {breadcrum.name}
                     </Link>
@@ -81,23 +81,23 @@ const Page = async ({ params }: PageProps) => {
             </ol>
 
             <div className='mt-4'>
-              <h1 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl'>
+              <h1 className='text-3xl font-bold tracking-tight text-primary sm:text-3xl'>
                 {product.name}
               </h1>
             </div>
 
             <section className='mt-4'>
               <div className='flex items-center'>
-                <p className='font-medium text-gray-900'>
+                <p className='font-medium text-accent'>
                   {formatPrice(product.price)}
                 </p>
-                <div className='ml-4 border-l text-muted-foreground border-gray-300 pl-4'>
+                <div className='ml-4 border-l text-dirtyWhite border-gray-300 pl-4'>
                   {label}
                 </div>
               </div>
 
               <div className='mt-4 space-y-6'>
-                <p className='text-base text-muted-foreground'>
+                <p className='text-base text-dirtyWhite'>
                   {product.description}
                 </p>
               </div>
@@ -107,7 +107,7 @@ const Page = async ({ params }: PageProps) => {
                   aria-hidden='true'
                   className='h-5 w-5 flex-shrink-0 text-green-500'
                 />
-                <p className='ml-2 text-sm text-muted-foreground'>
+                <p className='ml-2 text-sm text-dirtyWhite'>
                   Eligible for instant delivery
                 </p>
               </div>
@@ -131,7 +131,7 @@ const Page = async ({ params }: PageProps) => {
                     aria-hidden='true'
                     className='mr-2 h-5 w-5 flex-shrink-0 text-gray-400'
                   />
-                  <span className='text-muted-foreground hover:text-gray-700'>
+                  <span className='text-dirtyWhite hover:text-gray-400'>
                     30 Day Return Guarantee
                   </span>
                 </div>

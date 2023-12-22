@@ -24,7 +24,7 @@ export default buildConfig({
         user: "users",
         bundler: webpackBundler(),
         meta: {
-            titleSuffix: "- Hippo Marketplace",
+            titleSuffix: "- PrintCraft Hub",
             favicon: "/favicon.ico",
             ogImage: "/thumbnail.jpg"
         }
