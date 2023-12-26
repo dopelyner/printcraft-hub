@@ -1,5 +1,7 @@
 # PrintCraft Hub Marketplace
 
+<!-- ![Home Page](https://github.com/dopelyner/printcraft-hub/tree/master/public/homepage.png?raw=true) -->
+
 Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
 ## Features
@@ -119,6 +121,13 @@ RESEND_API_KEY=
 STRIPE_SECRECT_KEY=
 STRIPE_WEBHOOK_SECRECT=
 ```
+
+## Test payments (Stripe Checkout)
+All fields can have any value, expect the card number. Test it with:
+```
+Card information= 4242 4242 4242 4242
+```
+
 
 ## Getting Started
 
