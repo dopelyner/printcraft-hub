@@ -129,7 +129,7 @@ Card information=4242 4242 4242 4242
 ```
 
 ## MongoDB
-Query result example of a product:
+Query result example of a `product`:
 ```
 {
   "_id": {
@@ -169,6 +169,70 @@ Query result example of a product:
   "__v": {
     "$numberInt": "0"
   }
+}
+```
+
+Query result example of a `order`:
+```
+{
+  "_id": {
+    "$oid": "6578af5f4cb8565dc211ceb7"
+  },
+  "isPaid": true,
+  "user": "65673332f978986b063b81c7",
+  "products": [
+    "6578af2c4cb8565dc211ce70"
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1702408031191"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1702408031191"
+    }
+  },
+  "__v": {
+    "$numberInt": "0"
+  }
+}
+```
+
+Query result example of a `user`:
+```
+{
+  "_id": {
+    "$oid": "65673332f978986b063b81c7"
+  },
+  "role": "admin",
+  "email": "your-email@example.com",
+  "salt": "d1ef200028295af54b628b2f3114f30ab67a0b168ee5551be4bb8de5449bdf91",
+  "hash": "",
+  "_verified": true,
+  "_verificationToken": null,
+  "loginAttempts": {
+    "$numberInt": "0"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1701262130892"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1703675464752"
+    }
+  },
+  "__v": {
+    "$numberInt": "0"
+  },
+  "lockUntil": null,
+  "products": [
+    "657c7ef01f01de78a1b6b7a6",
+    "658484cb5d5ad399df11f5c8",
+    "658484cb5d5ad399df11f5c8"
+  ]
 }
 ```
 
