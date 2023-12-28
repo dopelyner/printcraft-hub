@@ -123,11 +123,54 @@ STRIPE_WEBHOOK_SECRECT=
 ```
 
 ## Test payments (Stripe Checkout)
-All fields can have any value, expect the card number. Test it with:
+All fields can have any value, expect the card number. Test the payments with:
 ```
-Card information= 4242 4242 4242 4242
+Card information=4242 4242 4242 4242
 ```
 
+## MongoDB
+Query result example of a product:
+```
+{
+  "_id": {
+    "$oid": "658d9a363f6907de5e5dbb47"
+  },
+  "user": "65673332f978986b063b81c7",
+  "name": "Portable Cable Organizer / Winder",
+  "description": "Clean up that tangle of wires with this portable cable organizer which winds up to be tucked cleanly away.",
+  "price": {
+    "$numberDouble": "9.99"
+  },
+  "category": "gadgets",
+  "product_files": "658595d66b83c3f322d0a41f",
+  "approvedForSale": "approved",
+  "priceId": "price_1OPr32At3g0kHL76X75vWwTJ",
+  "stripeId": "prod_PEJgvSJctzqhKx",
+  "images": [
+    {
+      "image": "658484c15d5ad399df11f5bb",
+      "id": "658484cb81533f258a7e89a7"
+    },
+    {
+      "image": "658595946b83c3f322d0a391",
+      "id": "658484cb81533f258a7e89a9"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1703183563530"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1703253500132"
+    }
+  },
+  "__v": {
+    "$numberInt": "0"
+  }
+}
+```
 
 ## Getting Started
 
