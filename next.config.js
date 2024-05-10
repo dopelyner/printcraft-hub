@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "https://printcraft-hub-production.up.railway.app/",
+        hostname: "https://printcraft-hub.vercel.app/",
       },
     ],
   },
